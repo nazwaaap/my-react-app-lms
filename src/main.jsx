@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import App from './App';
 import './App.css'
 
@@ -9,8 +9,19 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-// ----- dibawah ini adalah code toko buah -----
+// ------ di bawah ini code counter app ------
+// import React from 'react';
+// import ReactDOM from 'react-dom/client';
+// import App from './App';
+// import './App.css'
 
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+// )
+
+// ----- di bawah ini adalah code toko buah -----
 // import React from "react";
 // import ReactDOM from 'react-dom/client'
 // import App from './App.jsx'
