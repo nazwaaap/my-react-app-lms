@@ -34,7 +34,6 @@ function App() {
 
 export default App
 
-
 // ----- di bawah ini code counter app -----
 // import { useState } from "react"
 
