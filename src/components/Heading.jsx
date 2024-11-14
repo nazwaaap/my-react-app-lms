@@ -1,5 +1,5 @@
-const Heading = () => {
-    return <h1>My Favorite Foods</h1>
-}
+// const Heading = () => {
+//     return <h1>My Favorite Foods</h1>
+// }
 
-export default Heading
+// export default Heading

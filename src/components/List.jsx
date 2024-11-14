@@ -1,11 +1,11 @@
-const List = () => {
-    return (
-        <ul>
-            <li>Burger</li>
-            <li>Noodles</li>
-            <li>Martabak</li>
-        </ul>
-    )
-}
+// const List = () => {
+//     return (
+//         <ul>
+//             <li>Burger</li>
+//             <li>Noodles</li>
+//             <li>Martabak</li>
+//         </ul>
+//     )
+// }
 
-export default List
+// export default List
