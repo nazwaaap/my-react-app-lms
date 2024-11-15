@@ -1,38 +1,64 @@
 import { useState } from "react"
 
 function App() {
+    const [name, setName] = useState("")
 
-  const [headingText, setHeadingText] = useState("Hello");
-  const [isMouseOver, setMouseOver] = useState(false);
+    function handleChange(event) {
+        setName(event.target.value)
+    }
 
-  function handleClick() {
-      setHeadingText("Submitted");
-  }
-
-  function handleMouseOver() {
-      setMouseOver(true);
-  }
-
-  function handleMouseOut() {
-      setMouseOver(false);
-  }
-
-  return (
-      <div className="container">
-          <h1>{headingText}</h1>
-          <input type="text" placeholder="What's your name?" />
-          <button
-              style={{ backgroundColor: isMouseOver ? "black" : "white" }}
-              onClick={handleClick}
-              onMouseOver={handleMouseOver}
-              onMouseOut={handleMouseOut}
-              >Submit
-          </button>
-      </div>
-  );
+    return (
+        <div className="container">
+            <h1>Hello {name} </h1>
+            <input
+                onChange={handleChange}
+                type="text"
+                placeholder="What's your name?"
+                value={name} //controlled components
+            />
+            <button>Submit</button>
+        </div>
+    )
 }
 
 export default App
+
+// ----- di bawah ini code event handling pertama-----
+// import { useState } from "react"
+
+// function App() {
+
+//   const [headingText, setHeadingText] = useState("Hello");
+//   const [isMouseOver, setMouseOver] = useState(false);
+
+//   function handleClick() {
+//       setHeadingText("Submitted");
+//   }
+
+//   function handleMouseOver() {
+//       setMouseOver(true);
+//   }
+
+//   function handleMouseOut() {
+//       setMouseOver(false);
+//   }
+
+//   return (
+//       <div className="container">
+//           <h1>{headingText}</h1>
+//           <input type="text" placeholder="What's your name?" />
+//           <button
+//               style={{ backgroundColor: isMouseOver ? "black" : "white" }}
+//               onClick={handleClick}
+//               onMouseOver={handleMouseOver}
+//               onMouseOut={handleMouseOut}
+//               >Submit
+//           </button>
+//       </div>
+//   );
+// }
+
+// export default App
 
 // ----- di bawah ini code counter app -----
 // import { useState } from "react"
